@@ -1,0 +1,13 @@
+.edit-button{
+  color: black;
+}
+.delete-button{
+  color: red;
+}
+.view-button{
+  color: aqua;
+}
+a{
+  cursor: pointer;
+}
+

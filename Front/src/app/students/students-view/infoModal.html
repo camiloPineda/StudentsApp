@@ -1,0 +1,32 @@
+<div class="container-fluid" style="width: 500px">
+  <div class="col-12 text-center">
+    <h1 mat-dialog-title>Informacion del Estudiante</h1>
+  </div>
+  <mat-card>
+    <div class="col-12">
+      <div class="row">
+        <div class="col-6">
+          <p><strong>Id: </strong>{{data.id}}</p>
+        </div>
+        <div class="col-6">
+          <p><strong>Usuario: </strong>{{data.username}}</p>
+        </div>
+        <div class="col-6">
+          <p><strong>Nombre: </strong>{{data.firstName}}</p>
+        </div>
+        <div class="col-6">
+          <p><strong>Apellido: </strong>{{data.lastName}}</p>
+        </div>
+        <div class="col-6">
+          <p><strong>Edad: </strong>{{data.age}}</p>
+        </div>
+        <div class="col-6">
+          <p><strong>Carrera: </strong>{{data.career}}</p>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+  <div class="col-12 text-center mb-4 mt-4">
+    <button class="btn btn-success" (click)="getStudentId()">Aceptar</button>
+  </div>
+</div>

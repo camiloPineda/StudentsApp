@@ -1,0 +1,24 @@
+.header{
+  background-color: blue;
+}
+
+h1, h3{
+  color: white;
+}
+.mat-icon {
+  position: relative;
+  top: 10px;
+  font-size: 30px;
+  height: 30px;
+  width: 30px;
+  color: white;
+}
+
+p{
+  color: white;
+}
+
+a{
+  color: white !important;
+  cursor: pointer;
+}

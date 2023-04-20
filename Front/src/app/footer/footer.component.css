@@ -1,0 +1,11 @@
+footer {
+  background-color: rgba(128, 128, 128, 0.582);
+  bottom: 0;
+  width: 100%;
+  color: black;
+  position: absolute;
+}
+
+p{
+  margin: 0;
+}

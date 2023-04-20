@@ -1,0 +1,26 @@
+<div class="header container-fluid">
+  <div class="row align-items-center">
+    <div class="col col-lg-1 col-md-1 col-sm-1 text-center">
+      <img
+        width="40"
+        alt="Angular Logo"
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+      />
+      <p style="margin-bottom: 10px; margin-top: 5px;">Students App</p>
+    </div>
+
+    <div class="bienvenido col col-lg-6 col-md-6 col-sm-5 text-start align-items-center">
+      <h3 style="margin-bottom: 0px; margin-top: 20px;"><mat-icon> person_pin</mat-icon> Bienvenido: Usuario <strong>{{userLogeed | uppercase}}</strong></h3>
+    </div>
+
+    <div class="col col-lg-3 col-md-2 col-sm-4 text-end align-items-center">
+      <p style="margin-bottom: 0px; margin-top: 20px;">Fecha Actual: {{dateDay | date:'dd-MM-yyy hh:mm:ss'}}</p>
+    </div>
+
+    <div class="col col-lg-2 col-md-2 col-sm-4 text-end align-items-center">
+      <a (click)="logOut()">Cerrar Sesion <mat-icon>exit_to_app</mat-icon></a>
+    </div>
+  </div>
+</div>
+
+

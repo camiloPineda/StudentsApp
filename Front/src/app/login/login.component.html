@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 spinner" *ngIf="mostrarLoading">
+      <mat-spinner></mat-spinner>
+    </div>
+      <mat-card class="col-lg-4 col-md-4 col-sm-10">
+        <div class="text-center">
+          <h1>Login</h1>
+        </div>
+        <mat-card-content>
+          <div class="example-container">
+            <form [formGroup]="loginForm" action="" #formDirective="ngForm">
+              <mat-form-field appearance="fill">
+                <mat-label>Usuario</mat-label>
+                <div class="usrDiv">
+                  <input matInput placeholder="Usuario" formControlName="Username">
+                  <mat-icon class="usr">supervised_user_circle</mat-icon>
+                </div>
+                <mat-error *ngIf="loginForm.controls['Username'].hasError('required')">
+                  Usuario es <strong>obligatorio</strong>
+                </mat-error>
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" formControlName="Password">
+                <mat-error *ngIf="loginForm.controls['Password'].hasError('required')">
+                  Password es <strong>obligatorio</strong>
+                </mat-error>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+              </mat-form-field>
+            </form>
+          </div>
+        </mat-card-content>
+        <div class="text-center mb-4 mt-4">
+          <button class="btn btn-success" (click)="login(formDirective)" [disabled]="!loginForm.valid">Entrar</button>
+        </div>
+      </mat-card>
+  </div>
+</div>
